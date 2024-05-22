@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="layout">
+        <div class="aside">
+            <a href="#"><span class="logo">P</span></a>
+            <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+        </div>
+        <div class="header_menu">
+            <div class="header_nav">
+                <nav>
+                    <p class="header_title">Deals</p>
+
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="text" class="form-control input_form" placeholder="Search pipedrive"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <button class="btn_add"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <i class="fa-solid fa-circle-question"></i>
+                    </div>
+
+                </nav>
+                <div class="main">
+                    <h1>Test deal</h1>
+                    <div class="header_left">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button class="btn-won" id="btn-won">Won</button>
+                        <button class="btn_lost">Lost</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="content_data">
+                    <div class="workiz">
+                        <h2>Workiz</h2>
+                        <button class="btn-won" id="create" data-bs-toggle="modal" data-bs-target="#exampleModal">New
+                            Create a job</button>
+                    </div>
+                    <div class="workiz">
+                        <h2>Details</h2>
+
+                        <p>First name - <span id="firstSpan"></span></p>
+                        <p>Last name - <span id="lastSpan"></span></p>
+                        <p>Phone - <span id="phoneSpan"></span></p>
+                        <p>Email - <span id="emailSpan"></span></p>
+                        <p>Job type - <span id="jobTypeSpan"></span></p>
+                        <p>Job source - <span id="jobSourceSpan"></span></p>
+                        <p>Job description - <span id="jobDescriptionSpan"></span></p>
+                        <p>Address - <span id="addressSpan"></span></p>
+                        <p>City - <span id="citySpan"></span></p>
+                        <p>State - <span id="stateSpan"></span></p>
+                        <p>Zip code - <span id="zipcodeSpan"></span></p>
+                        <p>Area - <span id="areaSpan"></span></p>
+                        <p>Start date - <span id="dateSpan"></span></p>
+                        <p>Start time - <span id="time1Span"></span></p>
+                        <p>End time - <span id="time2Span"></span></p>
+                        <p>Test select - <span id="testSpan"></span></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="content">
+                        <div class="d-flex resurses">
+                            <p class="p-4"><i class="fa-regular fa-note-sticky"></i> Notes</p>
+                            <p class="p-4"><i class="fa-solid fa-chart-line"></i> Activity</p>
+                            <p class="p-4"><i class="fa-solid fa-phone"></i> Call</p>
+                            <p class="p-4"><i class="fa-regular fa-envelope"></i> Email</p>
+                            <p class="p-4"><i class="fa-regular fa-file"></i> Files</p>
+                            <p class="p-4"><i class="fa-regular fa-folder"></i> Documents</p>
+                            <p class="p-4"><i class="fa-solid fa-file-invoice"></i> Invoice</p>
+                        </div>
+                        <textarea name="" id="" placeholder="Take a note, @name" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">NEW Create Job</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <div class="custom-box-shadow">
+                                                <h5 class="mb-4">Client details</h5>
+                                                <form>
+                                                    <div class="row mb-3">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="First name" required id="first"
+                                                                name="first">
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Last name" id="last" name="last">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control" placeholder="Phone"
+                                                            required id="phone" name="phone">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="email" class="form-control" placeholder="Email"
+                                                            required id="email" name="email">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-box-shadow">
+                                                <h5 class="mb-4">Job details</h5>
+                                                <form>
+                                                    <div class="row mb-3">
+                                                        <div class="col">
+                                                            <select class="form-select" id="jobType">
+                                                                <option selected>Job type</option>
+                                                                <option selected>Fronted</option>
+                                                                <option selected>Backend</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col">
+                                                            <select class="form-select" id="jobSource">
+                                                                <option selected>Job Source</option>
+                                                                <option selected>Java Script</option>
+                                                                <option selected>React</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <textarea class="form-control" id="jobDescription"
+                                                            placeholder="Job description (optional)"
+                                                            rows="3"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <div class="custom-box-shadow">
+                                                <h5 class="mb-4">Service location</h5>
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control" id="address"
+                                                            placeholder="Address">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control" id="city"
+                                                            placeholder="City">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control" id="state"
+                                                            placeholder="State">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Zip code" id="zipcode">
+                                                        </div>
+                                                        <div class="col">
+                                                            <select class="form-select" id="area">
+                                                                <option selected>Area</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-box-shadow">
+                                                <h5 class="mb-4">Scheduled</h5>
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <input type="date" class="form-control" placeholder="Start date"
+                                                            id="date">
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col">
+                                                            <input type="time" class="form-control"
+                                                                placeholder="Start time" id="time1">
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="time" class="form-control"
+                                                                placeholder="End time" id="time2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <select class="form-select" id="test">
+                                                            <option selected>Test select</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal_footer">
+                                <button type="button" class="btn create" data-bs-dismiss="modal">Create job</button>
+                                <button type="button" class="btn save">Save info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

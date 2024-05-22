@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+body {
+    background-color: #E9E9E9 !important;
+}
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.aside {
+    background-color: #211C52;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    position: fixed;
+    height: 100vh;
+}
+
+a .fa-circle-dollar-to-slot {
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    color: white;
+    background-color: blueviolet;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.aside a {
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 96%;
+}
+
+.header_menu {
+    width: 100%;
+    margin-left: 4%;
+}
+
+.main {
+    background-color: white;
+    padding: 20px 12px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.55);
+    width: 100%;
+}
+
+.btn_lost {
+    background-color: #BF242D;
+}
+
+.btn-won {
+    background-color: #29873D;
+}
+
+.btn_lost,
+.btn-won {
+    color: white;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.content_data {
+    background-color: white;
+    height: 100%;
+    width: 25%;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.workiz {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.55);
+    padding: 12px;
+}
+
+.wrapper {
+    margin-top: 11%;
+    display: flex;
+    gap: 40px;
+}
+
+.fa-xmark {
+    cursor: pointer;
+}
+
+.form_card {
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body {
+    display: flex;
+}
+
+.modal {
+    width: 100% !important;
+}
+
+.modal_footer {
+    padding: 24px;
+    margin: 0 auto;
+}
+
+.create {
+    background-color: #f0c040 !important;
+    border-radius: 20px !important;
+}
+
+.save {
+    background-color: #d3d3d3 !important;
+    border-radius: 20px !important;
+}
+
+.btn:focus {
+    outline: none !important;
+}
+
+a .logo {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.header_title {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+.input-group-text {
+    background-color: white !important;
+    border-right: none !important;
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+}
+
+.input_form {
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    border-left: none !important;
+}
+
+.input-group {
+    max-width: 400px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    padding: 10px 12px;
+    background-color: white;
+    width: 96%;
+}
+
+nav p {
+    margin-bottom: 0 !important;
+}
+
+.btn_add {
+    background: transparent;
+    border: 1px solid #DDDDDD;
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-user-plus,
+.fa-lightbulb,
+.fa-circle-question {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+}
+
+.header_nav {
+    position: fixed !important;
+    width: 100%;
+}
+
+.content {
+    background-color: white;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.resurses {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.content textarea {
+    resize: none;
+    border-radius: 1px;
+}
